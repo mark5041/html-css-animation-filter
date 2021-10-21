@@ -102,7 +102,7 @@
     transition: 3s;
 }
 
-.ex-11-icon {
+.ex-11-icon:hover {
     animation-name: rotate-orary;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -136,6 +136,40 @@
         left: calc(100% - 90px);
     }
     100% {
+        left: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: rivolution;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rivolution {
+    0% {
+        top: -10px;
+        left: 20%;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        top: -10px;
         left: 20%;
     }
 }
