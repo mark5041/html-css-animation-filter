@@ -45,3 +45,97 @@
     width: 60px;
     margin: 20px;
 }
+
+.ex-6-img {
+    transition: 2s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: hue-rotate(180deg) grayscale(100%);
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: hue-rotate(180deg) saturate(200%);
+    border-radius: 50px;
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    filter: hue-rotate(180deg) saturate(200%) opacity(50%);
+    border-radius: 50px;
+    transform: scale(150%);
+}
+
+.ex-10-icon {
+    transition: 3s;
+}
+
+.ex-10-icon {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon {
+    transition: 3s;
+}
+
+.ex-11-icon {
+    animation-name: rotate-orary;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-orary{
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: moving-space;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moving-space{
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: calc(100% - 90px);
+    }
+    100% {
+        left: 20%;
+    }
+}
